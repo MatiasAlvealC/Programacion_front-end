@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* Barra de navegacion */
+header {
+    background-color: #74ABAB;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 0; /* Centra el nav horizontalmente */
+}
+
+.logo {
+    width: 100px; /* Ancho de la imagen */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 900px; /* Empuja los elementos del menú a la derecha */
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover {
+    color: white;
+}
+
+
+
+
+/* Imagen de la productora */
+
+#productora {
+    position: relative;
+    width: 100%;
+    height: 120vh; 
+    background: url('../img/A24.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.texto {
+    background-color: rgba(0, 0, 0, 0); /* Añade un fondo oscuro semitransparente para mejorar la legibilidad del texto */
+    color: black; /* Color del texto */
+    padding: 20px 400px 20px 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 400%;
+}
+
+
+/*  Galeria de imagenes */
+
+#galeria {
+    text-align: center; /* Centra el contenido horizontalmente */
+    background-color: #F3ECC3;
+}
+
+.titulo-galeria {
+    font-size: 36px; 
+    padding: 30px;
+}
+
+.films {
+    display: flex; /* flexbox distribuie los elementos horizontalmente */
+    justify-content: center; 
+    flex-wrap: wrap; /* Envuelve los elementos en varias líneas si no caben en una sola fila */
+}
+
+.poster-film {
+    flex: 0 0 25%; /* Establece que cada poster ocupe el 25% del espacio disponible */
+    margin: 10px; /* Añade un margen entre los posters */
+}
+
+.poster-film img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Cv  */
+#autor {
+    background-color:  #F3ECC3;
+    padding: 20px;
+}
+.titulo-cv {
+    font-size: 36px; 
+    padding: 30px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+.foto-cv {
+    text-align: center;
+}
+
+/*  tecnologias  */
+
+.tecnologia {
+    background-color:  #F3ECC3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.links_a24s {
+    width: 50%; /* Ajusta el ancho como desees */
+}
+.links_a24s ul{
+    list-style: none;
+}
+
+.iconos-links {
+    width: 50%; /* Ajusta el ancho como desees */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.iconos-links {
+    display: flex; /* flexbox distribuie los elementos horizontalmente */
+    justify-content: center; 
+    flex-wrap: wrap; /* Envuelve los elementos en varias líneas si no caben en una sola fila */
+}
+
+.iconos-links a {
+    flex: 0 0 25%; /* Establece que cada poster ocupe el 25% del espacio disponible */
+    margin: 10px; /* Añade un margen entre los posters */
+}
+
