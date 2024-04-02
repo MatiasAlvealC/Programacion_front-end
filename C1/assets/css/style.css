@@ -67,8 +67,9 @@ nav {
     text-align: center; /* Centra el texto horizontalmente */
     font-size: 400%;
 }
-
-
+.texto h2{
+    font-size: 60%;
+}
 /*  Galeria de imagenes */
 
 #galeria {
@@ -111,6 +112,90 @@ nav {
     text-align: center;
 }
 
+
+/* Proyectos */
+
+#proyectos{
+    display: flex;
+    background-color:  #F3ECC3;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.proyecto1{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 30px;
+    padding: 100px;
+
+}
+
+.proyecto2{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 30px;
+    padding: 100px;
+}
+
+.boton1{
+    background-color: black;
+    border-radius: 20px;
+    color:white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.boton2{
+    border-radius: 20px;
+    background-color: rgb(11,36,59);
+    border: none;
+    color:white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.boton3{
+    border-color: gray;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 7px 8px 7px 8px;
+    background-color: rgb(23,29,40);
+    color:white; 
+    font-size: 23px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.proyecto-imagen1 img{
+    border-radius: 20px;
+    width: 700px;
+}
+
+.proyecto-imagen2 img{
+    border-radius: 20px;
+    width: 700px;
+
+}
+
+
+.proyecto1 h1,
+.proyecto2 h1{
+    font-size: 60px;
+    color: black;
+}
+
 /*  tecnologias  */
 
 .tecnologia {
@@ -145,4 +230,11 @@ nav {
     flex: 0 0 25%; /* Establece que cada poster ocupe el 25% del espacio disponible */
     margin: 10px; /* Añade un margen entre los posters */
 }
+
+
+
+
+
+
+
 
