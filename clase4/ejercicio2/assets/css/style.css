@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width : 600px){
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    body {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    img {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1025px){
+    body {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    img {
+        width: 30%;
+    }
+}
