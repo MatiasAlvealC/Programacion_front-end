@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <form name="formulario" id="formulario" onsubmit="prueba(this)">
+    Ingrese Nombre <input type="text" name="nombre" id="nombre"/>
+    <br><br>
+    Ingrese Edad <input type="number" name="edad" id="edad"/>
+    <br>
+    <input type="submit" value="Guardar"/>
+    <input type="button" onclick="reporte()" value="Reporte"/>
+    </form>
+    <script>
+        // esto hace que no se recargue la pagina y que guarde los datos del formulario
+        document.getElementById("formulario").addEventListener
+        ("submit",function (event){
+            event.preventDefault()
+        })
+    </script>
+</body>
+</html>
