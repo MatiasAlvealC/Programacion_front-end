@@ -8,26 +8,20 @@
 </head>
 <body>
     <main class="container">
-        <h1>Formulario Préstamo</h1>
-        <form name="formulario" id="formulario" onsubmit="datos(this)">
+        <h1>Venta de productos</h1>
+        <form name="formulario" id="formulario" onsubmit="vender(this)">
             <div class="field">
-                <label>Nombre:</label>
+                <label>Nobre del producto:</label>
                 <input type="text" name="nombre" id="nombre" required>
             </div>
             <div class="field">
-                <label for="tipo_prestamo" class="form-label">Tipo Préstamo</label>
-                <select id="tipo_prestamo" name="tipo_prestamo" class="form-select" required>
-                    <option value="Hipotecario">Hipotecario</option>
-                    <option value="Automotriz">Automotriz</option>
-                    <option value="Consumo">Consumo</option>
-                </select>
+                <label>Valor Producto</label><input type="text" name="valor" id="valor">
             </div>
             <div class="actions">
-                <input type="submit" value="Solicitar">
-                <input type="button" onclick="reporte()" value="Resumen">
+                <input type="submit" value="Vender">
                 <button onclick="resetearRepositorio()">Resetear Repositorio</button>
                 <br>
-                <a href="resumen.html">Ver Resumen general</a>
+                <a href="tabla.html" >Ver productos  vendidos</a>
             </div>
         </form>
     </main>

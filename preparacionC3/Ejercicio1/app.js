@@ -12,6 +12,17 @@ function datos(formulario) {
     formulario.reset();
 }
 
+function resetearRepositorio() {
+    // Eliminar los datos del almacenamiento local
+    localStorage.removeItem("prestamos");
+
+    // Restablecer la variable productos a su estado inicial
+    prestamos = {  Hipotecario: [], Automotriz: [], Consumo: [] };
+
+    console.log("Repositorio reseteado");
+}
+
+
 function reporte() {
     let mensaje = "Hipotecarios: " + prestamos.Hipotecario.length + "\n" +
                   "Automotriz: " + prestamos.Automotriz.length + "\n" +
@@ -19,7 +30,7 @@ function reporte() {
 
     alert(mensaje);
 }
-
+// con la siguiente parte guardamos para ser llamado en la pagina resumen
 document.getElementById("hipotecarios").textContent = prestamos.Hipotecario.length;
 document.getElementById("automotriz").textContent = prestamos.Automotriz.length;
 document.getElementById("consumo").textContent = prestamos.Consumo.length;
