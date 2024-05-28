@@ -11,6 +11,6 @@ function datos(formulario) {
             document.getElementById('Error').innerHTML = mensaje;
         }
     } else {
-      alert('Datos vacios, ingrese dato');
+      alert('Dato(s) vacio(s), ingrese dato(s)');
     }
   }

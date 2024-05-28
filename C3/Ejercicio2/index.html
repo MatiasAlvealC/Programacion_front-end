@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Libros de la Biblioteca</h1>
+        <form name="formulario" id="formulario" onsubmit="datos(this)">
+            <div class="field">
+                <label>Título del libro:</label>
+                <input type="text" name="titulo" id="titulo" required>
+            </div>
+            <div class="field">
+                <label>Valor del libro</label><input type="number" name="valor" id="valor">
+            </div>
+            <div class="field">
+                <label>Cantidad de copias</label><input type="number" name="cantidad" id="cantidad">
+            </div>
+            <div class="actions">
+                <input type="submit" value="Registrar">   
+                <input type="button" onclick="costo()" value="Costo">
+                <input type="button" onclick="biblioteca()" value="Repositorio">
+            </div>
+        </form>
+    </main>
+    <script src="app.js"></script>
+    <script>
+        // Prevent the default form submission behavior
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
