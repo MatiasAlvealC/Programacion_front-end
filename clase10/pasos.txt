@@ -1,0 +1,16 @@
+1. Descargar NODE
+2. Instalar NODE
+3. Abrir VSCode
+4. En la terminal ejecutar:
+	npm create vite@latest NOMBREDELARCHIVO
+5. Seleccionar React y JavaScript
+6. Entrar a la carpeta , y con el terminal en la carpeta NOMBREDELARCHIVO 
+7. Ejecutar:
+	npm i
+ Esto actualizara todos los paquetes y demases
+8. Modificar el paquete package.json y agregar el --open para que se actualice sin necesidad de levantar la app
+ "dev": "vite --open"
+Incluso se puede agregar otras formar de levantar la app
+    "pokemon": "vite --open"
+
+9. Con CTR+c se sale del levantamiento
