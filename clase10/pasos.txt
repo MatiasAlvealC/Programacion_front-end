@@ -13,4 +13,8 @@
 Incluso se puede agregar otras formar de levantar la app
     "pokemon": "vite --open"
 
-9. Con CTR+c se sale del levantamiento
+9. Para correr la app
+ npm run dev o 
+ npm run pokemon
+
+10. Con CTR+c se sale del levantamiento
