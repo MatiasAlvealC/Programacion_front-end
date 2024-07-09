@@ -18,6 +18,32 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* App.css */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  justify-content: center;
+}
+
+.pokemon-card {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.pokemon-image {
+  width: 250px;  /*Ajusta el tamaño según sea necesario */
+  height: 250px;  /*Ajusta el tamaño según sea necesario */
+  object-fit: contain;
+  margin: auto;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
